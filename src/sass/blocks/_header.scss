@@ -1,0 +1,123 @@
+.header{
+    padding-top: 23px;
+    height: 100px;
+    color: #fff;
+    &__row{
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        ul{
+            display: flex;
+            li{
+                font-size: 15px;
+                font-weight: 400;
+                padding: 5px 15px;
+                border-right: 1px dotted rgba(#fff, 0.4);
+                &:last-child{
+                    border-right: none; 
+                }
+                a{
+                    position: relative;
+                    color: #fff;
+                    transition: all .3s ease-in;
+                    @media(min-width: 767px){
+                        
+                  
+                    &:hover{
+                        color: $main-color;
+                        &:before{
+                        opacity: 1;
+                        bottom: -5px;
+                    }
+                    }
+                      }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 100%;
+                        background: $main-color;
+                        bottom: 5px;
+                        left: 0;
+                        opacity: 0;
+                        transition: all .3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+
+    &__phone{
+        text-align: right;
+        a{
+            color: #fff;
+            font-size: 19px;
+            font-weight: 700;
+            transition: all .3s ease-in;
+            &:hover{
+                color: $main-color;
+            }
+
+        }
+    }
+    &__text{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+   
+    .menu-btn {
+        display: none;
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        left: 20px;
+        z-index: 3;
+      
+      span,
+      &::before,
+      &::after {
+        position: absolute;   
+        left: 0; 
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+      }
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        transition: all .3s ease-in;
+      }
+      &::before {
+        top: 0;
+      }
+       span{
+          top: 9px;
+      }
+      &_active span {
+        transform: scale(0);
+      }
+      &::after {
+        bottom: 0;
+      }
+      
+      &_active:before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      &_active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+    }
+}

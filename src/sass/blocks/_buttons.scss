@@ -1,0 +1,22 @@
+.btn{
+    padding: 18px 23px;
+    background-color: $main-color;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid $main-color;
+    transition: all .3s ease-in;
+    &:hover{
+        background: transparent;
+
+    }
+    &_main{
+       
+        padding: 23px 45px;
+        margin-bottom: 82px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
