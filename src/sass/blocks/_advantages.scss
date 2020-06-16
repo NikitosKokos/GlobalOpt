@@ -1,0 +1,30 @@
+.advantages{
+    background-color: #f3f3f3;
+    padding-bottom: 25px;
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    &__img{
+        margin-right: 20px;
+    }
+    &__item{
+        flex: 0 1 calc(50% - 30px);
+        display: flex;
+        margin-bottom: 35px;
+    }
+    &__title{
+        color: $main-color;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__p{
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}

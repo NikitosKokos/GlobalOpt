@@ -1,12 +1,11 @@
 .main-screen{
-    height: 100vh;
     min-height: 100vh;  
     position: relative;
     color: #fff;
     &__bg{
         position: absolute;
         width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         top: 0;
         left: 0;
         display: flex;
