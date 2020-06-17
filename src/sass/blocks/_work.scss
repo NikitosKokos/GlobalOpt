@@ -1,0 +1,30 @@
+.work{
+    background: #fff;
+    &__row{
+        display: flex;
+        margin: 37px 0 55px 0;
+        justify-content: space-between;
+    }
+    &__item{
+        flex: 0 1 31.5%;
+    }
+    &__img img{
+        width: 100%;
+    }
+    &__text{
+        text-align: center;
+        margin-top: 28px;
+    }
+    &__p{
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    &__title{
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+}

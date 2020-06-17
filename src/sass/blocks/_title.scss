@@ -5,5 +5,27 @@
     text-transform: uppercase;
     text-align: center;
     padding: 50px 0 38px 0;
-    
+    position: relative;
+    &_red{
+        &:after{
+            content: '';
+            position: absolute;
+            width: 148px;
+            height: 1px;
+            background: $main-color;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 18px;
+        }
+    }
+}
+
+.subtitle{
+    color: #2e2e2e;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    max-width: 880px;
+    margin: 0 auto;
 }

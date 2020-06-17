@@ -444,6 +444,73 @@ h6 {
   text-transform: uppercase;
   text-align: center;
   padding: 50px 0 38px 0;
+  position: relative;
+}
+
+.title_red:after {
+  content: '';
+  position: absolute;
+  width: 148px;
+  height: 1px;
+  background: #ec644b;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 18px;
+}
+
+.subtitle {
+  color: #2e2e2e;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.work {
+  background: #fff;
+}
+
+.work__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 37px 0 55px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31.5%;
+          flex: 0 1 31.5%;
+}
+
+.work__img img {
+  width: 100%;
+}
+
+.work__text {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.work__p {
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.work__title {
+  color: #ec644b;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 ._container {
@@ -539,6 +606,15 @@ h6 {
     padding: 40px 0 30px 0;
   }
 
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .work__p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   .advantages__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 calc(50% - 15px);
@@ -612,6 +688,33 @@ h6 {
   .title {
     font-size: 20   px;
     padding: 40px 0 30px 0;
+  }
+
+  .title_red:after {
+    width: 100px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .work__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .work__item {
+    max-width: 360px;
+    margin-bottom: 40px;
+  }
+
+  .work__img {
+    margin: 0 auto;
   }
 
   .advantages__item {
@@ -840,5 +943,11 @@ h6 {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .work__item {
+    max-width: none;
   }
 }
