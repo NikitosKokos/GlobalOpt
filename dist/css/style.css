@@ -380,6 +380,7 @@ h6 {
   -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -391,6 +392,18 @@ h6 {
   margin-bottom: 82px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.btn_p {
+  padding: 16px 43px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.btn_p:hover {
+  background-color: #dc5238;
 }
 
 .advantages {
@@ -468,6 +481,7 @@ h6 {
   line-height: 24px;
   max-width: 880px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .work {
@@ -478,7 +492,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 37px 0 55px 0;
+  margin: 0 0 55px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -511,6 +525,118 @@ h6 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+.agent {
+  background: url("../../img/agentBg.png") center center/cover no-repeat;
+  padding: 58px 0 75px 0;
+}
+
+.agent__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.agent__img {
+  padding: 27px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.agent__title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.agent__p {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 985px;
+}
+
+.prices {
+  padding-bottom: 55px;
+}
+
+.prices__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 10px);
+          flex: 0 0 calc(25% - 10px);
+  border: 1px solid #e9e9e9;
+  background-color: #ffffff;
+  position: relative;
+  text-align: center;
+  padding: 77px 20px 0 20px;
+}
+
+.prices__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prices__title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #25333c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 22px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.prices__img {
+  margin-bottom: 10px;
+}
+
+.prices__subtitle {
+  margin-bottom: 15px;
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.prices__price {
+  color: #ec644b;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.prices__p {
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.prices .btn_p {
+  margin: 25px 0 25px 0;
 }
 
 ._container {
@@ -593,6 +719,10 @@ h6 {
   .main-screen__line::before,
   .main-screen__line::after {
     width: 350px;
+  }
+
+  .prices__item {
+    padding: 77px 15px 0 15px;
   }
 }
 
@@ -677,6 +807,23 @@ h6 {
   .header .btn {
     padding: 10px 15px;
     font-size: 10px;
+  }
+
+  .prices {
+    padding-bottom: 20px;
+  }
+
+  .prices__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .prices__item {
+    padding: 77px 20px 0 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 10px);
+            flex: 0 0 calc(50% - 10px);
+    margin-bottom: 30px;
   }
 }
 
@@ -876,6 +1023,10 @@ h6 {
   .header .menu-btn {
     display: block;
   }
+
+  .agent__p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -890,7 +1041,14 @@ h6 {
   }
 
   .main-screen__items {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main-screen__items li {
+    max-width: 300px;
   }
 
   .main-screen__subtitle {
@@ -943,6 +1101,19 @@ h6 {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .prices__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .prices__item {
+    padding: 77px 20px 0 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 30px;
   }
 }
 

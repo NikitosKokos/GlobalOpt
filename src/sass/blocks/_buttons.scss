@@ -8,6 +8,7 @@
     text-transform: uppercase;
     border: 1px solid $main-color;
     transition: all .3s ease-in;
+    display: inline-block;
     &:hover{
         background: transparent;
 
@@ -18,5 +19,15 @@
         margin-bottom: 82px;
         font-size: 15px;
         font-weight: 700;
+    }
+    &_p{
+        padding: 16px 43px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:hover{
+            background-color: #dc5238;
+        }
     }
 }
