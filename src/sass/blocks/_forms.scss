@@ -1,0 +1,61 @@
+.consultation{
+    padding: 55px 0 80px 0;
+    &__title{
+        color: #3a3a3a;
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    &__button{
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 15px;
+            background: #fff;
+        }
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 1px solid #898989;
+        padding: 68px 0 53px 0;
+        
+        input{
+            padding: 15px 30px;
+            border: 1px solid #898989;
+            border-radius: 30px;
+            margin: 0 2.5px;
+            width: 270px;
+            transition: all .3s ease-in;
+            &:hover{
+                border-color: $main-color;
+                color: $main-color;
+            }
+            &:focus{
+                border-color: #111;
+                color: #111;
+            }
+        }
+    }
+    
+    &__agent{
+        background: #fff;
+        padding: 0 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        img{    
+            padding: 20px;
+            border: 1px solid $main-color;
+            border-radius: 50%;
+            background: #fff;
+        }
+        
+    }
+    
+}

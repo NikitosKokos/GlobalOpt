@@ -406,6 +406,19 @@ h6 {
   background-color: #dc5238;
 }
 
+.btn_f {
+  padding: 18px 31px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn_f:hover {
+  background-color: #dc5238;
+}
+
 .advantages {
   background-color: #f3f3f3;
   padding-bottom: 25px;
@@ -528,7 +541,7 @@ h6 {
 }
 
 .agent {
-  background: url("../../img/agentBg.png") center center/cover no-repeat;
+  background: url("../img/agentBg.png") center center/cover no-repeat;
   padding: 58px 0 75px 0;
 }
 
@@ -639,6 +652,84 @@ h6 {
   margin: 25px 0 25px 0;
 }
 
+.consultation {
+  padding: 55px 0 80px 0;
+}
+
+.consultation__title {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.consultation__button {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0 15px;
+  background: #fff;
+}
+
+.consultation__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 1px solid #898989;
+  padding: 68px 0 53px 0;
+}
+
+.consultation__form input {
+  padding: 15px 30px;
+  border: 1px solid #898989;
+  border-radius: 30px;
+  margin: 0 2.5px;
+  width: 270px;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.consultation__form input:hover {
+  border-color: #ec644b;
+  color: #ec644b;
+}
+
+.consultation__form input:focus {
+  border-color: #111;
+  color: #111;
+}
+
+.consultation__agent {
+  background: #fff;
+  padding: 0 10px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -50px;
+}
+
+.consultation__agent img {
+  padding: 20px;
+  border: 1px solid #ec644b;
+  border-radius: 50%;
+  background: #fff;
+}
+
 ._container {
   max-width: calc(1140px + 30px);
   padding: 0 15px;
@@ -738,6 +829,19 @@ h6 {
 
   .subtitle {
     font-size: 18px;
+  }
+
+  .consultation__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .consultation__form input {
+    margin-bottom: 20px;
+  }
+
+  .consultation__form input:last-child {
+    margin-bottom: 0;
   }
 
   .work__p {
@@ -1035,6 +1139,20 @@ h6 {
     padding: 40px 0 30px 0;
   }
 
+  .consultation__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .consultation__form input {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
   .main-screen__title {
     margin-top: 23px;
     font-size: 30px;
@@ -1114,6 +1232,10 @@ h6 {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     margin-bottom: 30px;
+  }
+
+  .btn_f {
+    font-size: 10px;
   }
 }
 
