@@ -541,12 +541,12 @@ h6 {
 }
 
 .agent {
-  background: url("../../img/agentBg.png") center center/cover no-repeat;
+  background: url("../img/agentBg.png") center center/cover no-repeat;
   padding: 58px 0 75px 0;
 }
 
 .agent_m {
-  background: url("../../img/managerBg.png") center center/cover no-repeat;
+  background: url("../img/managerBg.png") center center/cover no-repeat;
 }
 
 .agent__row {
@@ -793,12 +793,12 @@ h6 {
 }
 
 .customer .swiper-button-next {
-  background: url("../../img/customer/next.svg") center center/cover no-repeat;
+  background: url("../img/customer/next.svg") center center/cover no-repeat;
   left: calc(50% + 100px);
 }
 
 .customer .swiper-button-prev {
-  background: url("../../img/customer/prev.svg") center center/cover no-repeat;
+  background: url("../img/customer/prev.svg") center center/cover no-repeat;
   left: calc(50% - 100px);
 }
 
