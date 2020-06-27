@@ -164,3 +164,23 @@ menuBtn.addEventListener('click', (e) => {
 });
 
 // menu-btn end
+
+
+let mySwiper = new Swiper ('.swiper-container', {
+	slidesPerView: 1,
+	centeredSlides: true,
+	spaceBetween: 130,
+	 navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  breakpoints: {
+	  768: {
+		slidesPerView: 2,
+	  },
+	  1200: {
+		slidesPerView: 3,
+	  }
+  }
+  })

@@ -541,8 +541,12 @@ h6 {
 }
 
 .agent {
-  background: url("../img/agentBg.png") center center/cover no-repeat;
+  background: url("../../img/agentBg.png") center center/cover no-repeat;
   padding: 58px 0 75px 0;
+}
+
+.agent_m {
+  background: url("../../img/managerBg.png") center center/cover no-repeat;
 }
 
 .agent__row {
@@ -728,6 +732,100 @@ h6 {
   border: 1px solid #ec644b;
   border-radius: 50%;
   background: #fff;
+}
+
+.customer {
+  padding-bottom: 65px;
+}
+
+.customer__img {
+  margin-bottom: 20px;
+}
+
+.customer__img img {
+  margin: 0 auto;
+  display: block;
+}
+
+.customer__text {
+  text-align: center;
+  color: #3a3a3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.customer__p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22.01px;
+  width: 600px;
+}
+
+.customer .swiper-button-next::after,
+.customer .swiper-button-prev::after {
+  display: none;
+}
+
+.customer .swiper-button-prev,
+.customer .swiper-button-next {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: calc(114px / 2);
+}
+
+.customer .swiper-button-next {
+  background: url("../../img/customer/next.svg") center center/cover no-repeat;
+  left: calc(50% + 100px);
+}
+
+.customer .swiper-button-prev {
+  background: url("../../img/customer/prev.svg") center center/cover no-repeat;
+  left: calc(50% - 100px);
+}
+
+.customer .swiper-slide {
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0.3;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.customer .swiper-slide-active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.customer .swiper-container {
+  margin: 0 auto;
+  max-width: calc(1400px + 30px);
+  padding: 0 15px;
 }
 
 ._container {
@@ -1130,6 +1228,13 @@ h6 {
 
   .agent__p {
     font-size: 16px;
+  }
+
+  .customer__p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    width: auto;
   }
 }
 

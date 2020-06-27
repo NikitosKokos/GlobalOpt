@@ -1,0 +1,70 @@
+.customer{
+    padding-bottom: 65px;
+    &__img{
+        margin-bottom: 20px;
+        img{
+            margin: 0 auto;
+            display: block;
+        }
+        
+    }
+    
+    &__text{
+        text-align: center;
+        color: #3a3a3a;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+
+    &__name{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__p{
+        font-weight: 300; 
+        font-size: 14px;
+        line-height: 22.01px;
+        width: 600px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        position: absolute;
+        transform: translateX(-50%);
+        top:calc(114px / 2);
+
+    }
+    .swiper-button-next{
+        background: url('../../img/customer/next.svg') center (center / cover) no-repeat; 
+        left: calc(50% + 100px);
+    }
+    .swiper-button-prev{
+        background: url('../../img/customer/prev.svg') center (center / cover) no-repeat; 
+        left: calc(50% - 100px);
+    }
+    .swiper-slide{
+        transform: scale(.5);
+        opacity: 0.3;
+        transition: all .3s ease-in;
+    }
+    .swiper-slide-active{
+        transform: scale(1);
+        opacity: 1;
+        transition: all .3s ease-in;
+
+    }
+    .swiper-container{
+        margin: 0 auto;
+        max-width: calc(1400px + 30px);
+        padding: 0 15px;
+    }
+    
+}
