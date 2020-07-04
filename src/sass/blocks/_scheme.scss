@@ -1,0 +1,23 @@
+.scheme{
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__title{
+
+    }
+    &__p{
+        
+    }
+}
