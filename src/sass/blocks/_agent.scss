@@ -1,9 +1,9 @@
 .agent{
     
-    background: url('../img/agentBg.png') center (center / cover) no-repeat;
+    background: url('../img/agentBg.webp') center (center / cover) no-repeat;
     padding: 58px 0 75px 0;
     &_m{
-        background: url('../img/managerBg.png') center (center / cover) no-repeat; 
+        background: url('../img/managerBg.webp') center (center / cover) no-repeat; 
     }
     &__row{
         display: flex;

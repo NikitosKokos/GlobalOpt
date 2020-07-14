@@ -60,7 +60,7 @@
     
 }
 .questions{
-    background: url(../img/formBg.png) center center/cover no-repeat;
+    background: url(../img/formBg.webp) center center/cover no-repeat;
     padding: 60px 0 80px 0;
     &__row{
         display: flex;
@@ -106,7 +106,7 @@
             border-radius: 10px;
             margin-bottom: 15px;
             resize: none;
-            
+
             &:hover{
                 border-color: $main-color;
                 color: $main-color;
