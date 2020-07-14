@@ -66,7 +66,7 @@
         font-size: 18px;
     }
     .consultation{
-        &__form{
+        .form{
             flex-wrap: wrap;
             input{
                 margin-bottom: 20px;
@@ -332,6 +332,17 @@
             flex: 0 0 50%;
         }
     }
+    .questions{
+        &__bottom{
+        padding: 18px 15px 25px 15px;
+        }
+        .form{
+            input{
+                flex: 0 0 calc(49%);
+            }
+        }
+    }
+    
 }
 
 @media(max-width: 620px){
@@ -341,7 +352,7 @@
         
     }
     .consultation{
-        &__form{
+        .form{
             flex-direction: column;
             padding-left: 10px;
             padding-right: 10px;
@@ -425,6 +436,14 @@
     .scheme{
         &__item{
             flex: 0 0 100%;
+        }
+    }
+    .questions{
+ 
+        .form{
+            input{
+                flex: 0 0 calc(100%);
+            }
         }
     }
 }
