@@ -1,4 +1,6 @@
 .scheme{
+    background-color: #f3f3f3;
+    padding-bottom: 20px;
     &__row{
         display: flex;
         flex-wrap: wrap;
@@ -6,18 +8,23 @@
         align-items: center;
     }
     &__item{
-        width: 220px;
+        flex: 0 0 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 25px;
+    }
+    &__img{
+        margin-bottom: 10px;
     }
     &__text{
         text-align: center;
     }
     &__title{
+        color: #ec644b;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 
-    }
-    &__p{
-        
-    }
 }

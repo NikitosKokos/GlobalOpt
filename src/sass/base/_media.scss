@@ -158,6 +158,11 @@
             margin-bottom: 30px;
         }
     }
+    .scheme{
+        &__item{
+            flex: 0 0 33%;
+        }
+    }
 }
 
 @media(max-width: 767px){
@@ -322,6 +327,11 @@
             width: auto;
         }
     }
+    .scheme{
+        &__item{
+            flex: 0 0 50%;
+        }
+    }
 }
 
 @media(max-width: 620px){
@@ -410,6 +420,11 @@
         &_f{
 
             font-size: 10px;
+        }
+    }
+    .scheme{
+        &__item{
+            flex: 0 0 100%;
         }
     }
 }
