@@ -14,6 +14,8 @@
 @import './blocks/forms';
 @import './blocks/customer';
 @import './blocks/scheme';
+@import './blocks/map';
+@import './blocks/preloader';
 
 ._container{
     max-width: $maxWidth;

@@ -1,5 +1,15 @@
 
-
+document.body.onload = () => {
+	setTimeout(() => {
+	const preloader = document.querySelector('.preloader');
+	if(!preloader.classList.contains('preloader__close')){
+		preloader.classList.add('preloader__close');
+		document.body.classList.remove('hidden');
+	}
+	},500);
+	
+	
+};
 // ibg class
 
 function ibg(){
@@ -183,4 +193,16 @@ let mySwiper = new Swiper ('.swiper-container', {
 		slidesPerView: 3,
 	  }
   }
-  })
+  });
+
+// MapBox
+mapboxgl.accessToken = 'pk.eyJ1IjoibmlraXRvc2tva29zIiwiYSI6ImNrY202OHFvdDAwNjkycXJ1dGhsbHh6M3gifQ.Vexdeh4-F-FCTNm-ohUfTA';
+let map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v9'
+});
+
+
+// MApBox end
+
+
