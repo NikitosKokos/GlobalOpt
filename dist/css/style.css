@@ -735,7 +735,7 @@ h6 {
 }
 
 .questions {
-  background: url(../img/formBg.webp) center center/cover no-repeat;
+  background: url("../img/formBg.webp") center center/cover no-repeat;
   padding: 60px 0 80px 0;
 }
 
@@ -988,6 +988,55 @@ h6 {
 #map {
   width: 100%;
   height: 500px;
+}
+
+#map .mapboxgl-popup-tip {
+  border: none;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+
+#map .city {
+  color: #ec644b;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#map .street {
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+#map .mail {
+  color: #ec644b;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+#map #marker {
+  background-image: url("../img/icons/MapMarker.png");
+  background-size: cover;
+  width: 50px;
+  height: 60px;
+  cursor: pointer;
+}
+
+#map .mapboxgl-popup-content {
+  padding: 28px;
+  width: 300px;
+}
+
+#map .mapboxgl-popup {
+  display: block;
 }
 
 :root {
@@ -1262,6 +1311,157 @@ body.hidden {
   overflow: hidden;
 }
 
+.footer {
+  background: #25333c;
+  padding: 25px 0;
+  color: #fff;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.footer__global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  margin-right: 40px;
+}
+
+.footer__p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.footer__phone {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.footer__phone a {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.footer__phone a:hover {
+  color: #ec644b;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__politic a {
+  position: relative;
+  color: #ec644b;
+  font-size: 13px;
+  font-weight: 300;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.footer__politic a:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #ec644b;
+  bottom: 0px;
+  left: 0;
+  opacity: 1;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.footer__site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__site p {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.footer__site img {
+  width: 33px;
+}
+
 ._container {
   max-width: calc(1140px + 30px);
   padding: 0 15px;
@@ -1294,6 +1494,15 @@ body.hidden {
   .header .nav ul li a:hover:before {
     opacity: 1;
     bottom: -5px;
+  }
+
+  .footer__politic a:hover {
+    color: #ec644b;
+  }
+
+  .footer__politic a:hover:before {
+    opacity: 0;
+    bottom: -3px;
   }
 }
 
@@ -1466,6 +1675,31 @@ body.hidden {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33%;
             flex: 0 0 33%;
+  }
+
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .footer__global {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .footer__contact {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -1810,6 +2044,50 @@ body.hidden {
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
   }
+
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__politic {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-bottom: 10px;
+  }
+
+  .footer__copyright {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 10px;
+  }
+
+  .footer__site {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .footer__phone {
+    margin-right: 0;
+  }
+
+  .footer__phone a {
+    font-size: 12px;
+  }
+
+  .footer__text {
+    font-size: 10px;
+  }
+
+  .footer .btn {
+    padding: 15px 18px;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1817,3 +2095,5 @@ body.hidden {
     max-width: none;
   }
 }
+
+.webp #map #marker{ background-image: url(../img/icons/MapMarker.webp); }

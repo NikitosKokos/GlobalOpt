@@ -1,4 +1,5 @@
 
+
 document.body.onload = () => {
 	setTimeout(() => {
 	const preloader = document.querySelector('.preloader');
@@ -10,6 +11,7 @@ document.body.onload = () => {
 	
 	
 };
+
 // ibg class
 
 function ibg(){
@@ -196,13 +198,94 @@ let mySwiper = new Swiper ('.swiper-container', {
   });
 
 // MapBox
+
+// mapboxgl.accessToken = 'pk.eyJ1IjoibmlraXRvc2tva29zIiwiYSI6ImNrY202OHFvdDAwNjkycXJ1dGhsbHh6M3gifQ.Vexdeh4-F-FCTNm-ohUfTA';
+// let coordinat = [ 37.627219,55.747977];
+// var map = new mapboxgl.Map({
+// container: 'map',
+// zoom: 15,
+// center: coordinat,
+// style: 'mapbox://styles/mapbox/satellite-v9'
+// });
+// // ../img/icons/MapMarker.png
+
+
+// map.on('load', function() {
+// 	map.loadImage(
+// 	'../img/icons/MapMarker.png',
+// 	function(error, image) {
+// 	if (error) throw error;
+// 	map.addImage('cat', image);
+// 	map.addSource('point', {
+// 	'type': 'geojson',
+// 	'data': {
+// 	'type': 'FeatureCollection',
+// 	'features': [
+// 	{
+// 	'type': 'Feature',
+// 	'geometry': {
+// 	'type': 'Point',
+// 	'coordinates': [ 37.627219,55.747977]
+// 	}
+// 	}
+// 	]
+// 	}
+// 	});
+// 	map.addLayer({
+// 	'id': 'points',
+// 	'type': 'symbol',
+// 	'source': 'point',
+// 	'layout': {
+// 	'icon-image': 'cat',
+// 	'icon-size': 1
+// 	}
+// 	});
+// 	}
+// 	);
+// 	});
+// 	new mapboxgl.Marker(map)
+// 		.setLngLat(monument)
+// 		.setPopup(popup) // sets a popup on this marker
+// 		.addTo(map);
+// 	var popup = new mapboxgl.Popup({ closeOnClick: false })
+// 		.setLngLat([37.630000,55.747977])
+// 		.setHTML(`
+// 		<div class='city' >г. Москва</div> 
+// 		<div class='street' >ул. Садовническая, дом 5, офис 4-6
+// 		700 от м. Новокузнецкая<br>
+// 		Тел: +7 (926) 423 01 00</div> 
+// 		<a href='#' class='mail'>info@glopt.ru</a>
+// 		`)
+// 		.addTo(map);
+
 mapboxgl.accessToken = 'pk.eyJ1IjoibmlraXRvc2tva29zIiwiYSI6ImNrY202OHFvdDAwNjkycXJ1dGhsbHh6M3gifQ.Vexdeh4-F-FCTNm-ohUfTA';
-let map = new mapboxgl.Map({
+var monument = [ 37.627219,55.747977];
+var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/mapbox/streets-v9'
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [ 37.629000,55.747977],
+zoom: 16
 });
-
-
+ 
+// create the popup.Popup({ offset: 0 })
+var popup = new mapboxgl.Popup({closeButton: false, closeOnClick: false, offset: [350, 0], anchor: 'right' }).setHTML(`
+ 		<div class='city' >г. Москва</div> 
+ 		<div class='street' >ул. Садовническая, дом 5, офис 4-6
+ 		700 от м. Новокузнецкая<br>
+ 		Тел: +7 (926) 423 01 00</div> 
+		<a href='#' class='mail'>info@glopt.ru</a>
+		`)
+		.setMaxWidth("300px").addTo(map);
+ 
+// create DOM element for the marker
+var el = document.createElement('div');
+el.id = 'marker';
+ 
+// create the marker
+new mapboxgl.Marker(el)
+.setLngLat(monument)
+.setPopup(popup) 
+.addTo(map);
 // MApBox end
 
 

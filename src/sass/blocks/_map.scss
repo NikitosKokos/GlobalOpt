@@ -1,4 +1,49 @@
 #map{
     width: 100%;
     height: 500px;
+  
+    .mapboxgl-popup-tip{
+        border: none;
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-right: 10px solid #fff;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+    }
+    .city{
+        color: #ec644b;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .street{
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    .mail{
+        color: #ec644b;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
+    #marker {
+        background-image: url('../img/icons/MapMarker.png');
+        background-size: cover;
+        width: 50px;
+        height: 60px;
+        cursor: pointer;
+        }
+        .mapboxgl-popup-content{
+            padding: 28px;
+            width: 300px;
+            
+        }
+        .mapboxgl-popup{
+            display: block;
+        }
+        
+       
 }
